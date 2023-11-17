@@ -2,6 +2,7 @@
 
 import Foundation
 
+@frozen
 public enum SettingProperty<T> {}
 
 extension SettingProperty where T: KeyValueDirectStoringSupporting {

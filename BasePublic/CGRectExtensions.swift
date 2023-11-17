@@ -4,6 +4,7 @@ import CoreGraphics
 import Foundation
 
 extension CGRect {
+  @frozen
   public enum Corner: CaseIterable {
     case topLeft
     case topRight

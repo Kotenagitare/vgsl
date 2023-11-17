@@ -5,6 +5,7 @@ import Foundation
 import QuartzCore
 
 public struct ImageContentMode: Equatable {
+  @frozen
   public enum Scale: Equatable {
     case resize
     case aspectFill
@@ -13,12 +14,14 @@ public struct ImageContentMode: Equatable {
     case noScale
   }
 
+  @frozen
   public enum VerticalAlignment: Equatable {
     case top
     case center
     case bottom
   }
 
+  @frozen
   public enum HorizontalAlignment: Equatable {
     case left
     case center

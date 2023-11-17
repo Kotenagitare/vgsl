@@ -3,6 +3,7 @@
 import Foundation
 
 extension Optional {
+  @frozen
   public enum Error: Swift.Error {
     case valueIsNil
   }

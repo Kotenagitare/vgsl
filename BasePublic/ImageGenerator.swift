@@ -2,6 +2,7 @@
 
 import CoreImage
 
+@frozen
 public enum ImageGeneratorType: FilterProtocol {
   case constantColor(color: CIColor)
 

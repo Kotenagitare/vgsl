@@ -1,4 +1,5 @@
 // Copyright 2018 Yandex LLC. All rights reserved.
+
 public struct SignalPipe<T> {
   private let bag = Bag<Observer<T>>()
   public let signal: Signal<T>

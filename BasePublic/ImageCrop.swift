@@ -2,6 +2,7 @@
 
 import CoreImage
 
+@frozen
 public enum ImageCropType: FilterProtocol {
   case crop(rect: CIVector)
 

@@ -2,6 +2,7 @@
 
 import CoreImage
 
+@frozen
 public enum ImageComposerType: FilterProtocol {
   case sourceAtop
   case sourceIn

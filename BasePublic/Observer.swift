@@ -1,5 +1,6 @@
 // Copyright 2018 Yandex LLC. All rights reserved.
 
+@frozen
 public struct Observer<T> {
   public let action: (T) -> Void
 

@@ -2,6 +2,7 @@
 
 import CoreGraphics
 
+@frozen
 public enum RelativeTag {}
 public typealias RelativeValue = Tagged<RelativeTag, CGFloat>
 

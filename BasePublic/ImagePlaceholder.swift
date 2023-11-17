@@ -3,6 +3,7 @@ import Foundation
 
 import BaseUIPublic
 
+@frozen
 public enum ImagePlaceholder: Equatable, CustomDebugStringConvertible {
   case image(Image)
   case imageData(ImageData)

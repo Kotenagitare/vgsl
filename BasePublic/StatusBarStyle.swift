@@ -2,6 +2,7 @@
 
 import Foundation
 
+@frozen
 public enum StatusBarStyle {
   case `default`
   case light
