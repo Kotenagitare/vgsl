@@ -20,6 +20,7 @@ extension URLResourceRequesting {
 }
 
 public struct URLRequestResult {
+  @frozen
   public enum Source {
     case network
     case cache

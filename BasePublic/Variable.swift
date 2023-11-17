@@ -4,6 +4,7 @@ import Foundation
 
 @dynamicMemberLookup
 @propertyWrapper
+@frozen
 public struct Variable<T> {
   @usableFromInline
   let getter: () -> T

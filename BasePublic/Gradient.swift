@@ -102,16 +102,19 @@ public enum Gradient: Equatable {
       self.shape = .circle
     }
 
+    @frozen
     public enum CenterPoint: Equatable {
       case relative(CGFloat)
       case absolute(Int)
     }
 
+    @frozen
     public enum Radius: Equatable {
       case relativeToBorders(RelativeToBorder)
       case relativeToSize(RelativePoint)
       case absolute(Int)
 
+      @frozen
       public enum RelativeToBorder {
         case nearestCorner
         case farthestCorner
@@ -120,6 +123,7 @@ public enum Gradient: Equatable {
       }
     }
 
+    @frozen
     public enum Shape {
       case circle
       case ellipse

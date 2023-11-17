@@ -5,6 +5,7 @@ import Foundation
 import BaseUIPublic
 
 extension String {
+  @frozen
   public enum PaddingSide {
     case left
     case right

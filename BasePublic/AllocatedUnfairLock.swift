@@ -2,7 +2,9 @@
 
 import os
 
+@frozen
 public struct AllocatedUnfairLock<State>: @unchecked Sendable {
+  @frozen
   public enum Ownership: Hashable, Sendable {
     case owner, notOwner
   }

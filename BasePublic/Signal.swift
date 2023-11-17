@@ -3,6 +3,7 @@
 import Foundation
 
 @dynamicMemberLookup
+@frozen
 public struct Signal<T> {
   public let addObserver: (Observer<T>) -> Disposable
 

@@ -4,6 +4,7 @@ import Foundation
 
 @dynamicMemberLookup
 @propertyWrapper
+@frozen
 public struct ObservableProperty<T> {
   private let getter: () -> T
   private let setter: (T) -> Void
@@ -183,6 +184,7 @@ extension ObservableProperty where T: Equatable {
     )
   }
 
+  @frozen
   public enum Modification {
     /// Applies `skipRepeats` on current `ObservableProperty`
     case skipRepeats

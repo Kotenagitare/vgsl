@@ -3,6 +3,7 @@ import Foundation
 
 @dynamicMemberLookup
 @propertyWrapper
+@frozen
 public struct ObservableVariable<T> {
   private let getter: () -> T
   public let newValues: Signal<T>

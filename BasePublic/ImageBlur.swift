@@ -2,6 +2,7 @@
 
 import CoreImage
 
+@frozen
 public enum ImageBlurType: FilterProtocol {
   case gaussian(radius: CGFloat)
 

@@ -9,6 +9,7 @@ import Foundation
 /// It can also be used as property wrapper, `wrappedValue` sets a new source,
 /// and gets the target.
 @propertyWrapper
+@frozen
 public struct ObservableVariableConnection<T> {
   private let impl: ObservableProperty<Signal<T>>
   public let target: ObservableVariable<T>

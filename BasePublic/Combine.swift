@@ -1,5 +1,6 @@
 // Copyright 2020 Yandex LLC. All rights reserved.
 
+@frozen
 public enum Combine {
   @inlinable
   public static func `throw`<T>(_ first: T, last: T) throws -> T {

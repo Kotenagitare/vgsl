@@ -26,6 +26,7 @@ import Foundation
 
 @dynamicMemberLookup
 @propertyWrapper
+@frozen
 public struct Property<T> {
   private let getter: () -> T
   private let setter: (T) -> Void

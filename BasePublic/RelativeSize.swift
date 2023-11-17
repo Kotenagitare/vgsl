@@ -2,6 +2,7 @@
 
 import CoreGraphics
 
+@frozen
 public enum RelativeSizeTag {}
 public typealias RelativeSize = Tagged<RelativeSizeTag, CGSize>
 

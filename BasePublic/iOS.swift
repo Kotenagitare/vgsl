@@ -16,6 +16,7 @@ public typealias ViewContentMode = UIView.ContentMode
 @available(tvOS, unavailable)
 public let uiSwitchSize = UISwitch().frame.size
 
+@frozen
 public enum PageControl {
   public static func size(forNumberOfPages number: Int) -> CGSize {
     pageControlSizeForNumberOfPages(number)
